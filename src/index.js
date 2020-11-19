@@ -1,4 +1,3 @@
-// import { render } from '@testing-library/react';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -74,15 +73,14 @@ class Game extends React.Component {
           <Board />
         </div>
         <div className="game-info">
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
+          <div>{}</div>
+          <ol>{}</ol>
         </div>
       </div>
     );
   }
 }
 
-// ========================================
 
 ReactDOM.render(
   <Game />,
