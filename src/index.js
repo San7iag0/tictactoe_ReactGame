@@ -82,6 +82,14 @@ class Game extends React.Component {
 }
 
 
+// function Square(props) {
+//   return (
+//     <button className="square" onClick={props.onClick}>
+//       {props.value}
+//     </button>
+//   );
+// }
+
 ReactDOM.render(
   <Game />,
   root
