@@ -21,8 +21,9 @@ class Board extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      squares: Array(9).fill(null)
-    }
+      squares: Array(9).fill(null),
+      xIsNext: true,
+    };
   }
 
   handleClick(i){
@@ -82,13 +83,13 @@ class Game extends React.Component {
 }
 
 
-// function Square(props) {
-//   return (
-//     <button className="square" onClick={props.onClick}>
-//       {props.value}
-//     </button>
-//   );
-// }
+function Square(props) {
+  return (
+    <button className="square" onClick={props.onClick}>
+      {props.value}
+    </button>
+  );
+}
 
 ReactDOM.render(
   <Game />,
